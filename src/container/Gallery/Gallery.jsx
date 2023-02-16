@@ -1,45 +1,52 @@
 import React from "react";
-import {
-  BsInstagram,
-  BsArrowLeftShort,
-  BsArrowRightShort,
-} from "react-icons/bs";
+import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
+import { FiFacebook } from "react-icons/fi";
 import { SubHeading } from "../../components";
 import { images } from "../../constants";
 import "./Gallery.css";
 
 const galleryImages = [
-  images.gallery01,
-  images.gallery02,
-  images.gallery03,
-  images.gallery04,
+  images.gallerySeafood01,
+  images.gallerySeafood02,
+  images.gallerySeafood03,
+  images.gallerySeafood04,
+  images.gallerySeafood05,
+  images.gallerySeafood06,
+  images.gallerySeafood07,
+  images.gallerySeafood08,
+  images.gallerySeafood09,
+  images.gallerySeafood10,
 ];
 
 const Gallery = () => {
   const scrollRef = React.useRef(null);
 
   const scroll = (direction) => {
-    const { current } = scrollRef;
+    const { current } = scrollRef; // = scrollRef.current
 
     if (direction === "left") {
-      current.scrollLeft -= 300;
+      current.scrollLeft -= 400;
     } else {
-      current.scrollLeft += 300;
+      current.scrollLeft += 400;
     }
   };
 
   return (
     <div className="app__gallery flex__center">
       <div className="app__gallery-content">
-        <SubHeading title="Instagram" />
+        <SubHeading title="Facebook" />
         <h1 className="headtext__cormorant">Photo Gallery</h1>
         <p className="p__opensans" style={{ color: "#AAA", marginTop: "2rem" }}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, quas
-          sunt quisquam velit earum unde! Eum rerum quaerat nostrum
-          reprehenderit.
+          At Bien Nho 2, you will enjoy more than 50 kinds of live seafood,
+          freshly prepared.
         </p>
         <button className="custom__button" type="button">
-          View More
+          <a
+            href="https://www.facebook.com/nhahanghaisanbiennho2/photos"
+            target="_blank"
+          >
+            View More
+          </a>
         </button>
       </div>
 
@@ -52,7 +59,13 @@ const Gallery = () => {
                 key={`gallery_image-${index + 1}`}
               >
                 <img src={image} alt="gallery" />
-                <BsInstagram className="gallery__image-icon" />
+                <a
+                  href="https://www.facebook.com/nhahanghaisanbiennho2/photos"
+                  target="_blank"
+                  className="gallery__image-icon"
+                >
+                  <FiFacebook />
+                </a>
               </div>
             );
           })}

@@ -10,8 +10,7 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        {/* <img src={images.gericht} alt="app logo" /> */}
-        <span style={{ color: "white", fontSize: "25px" }}>LOGO</span>
+        <img src={images.biennho} alt="app logo" />
       </div>
 
       <ul className="app__navbar-links">
@@ -24,20 +23,20 @@ const Navbar = () => {
         <li className="p__opensans">
           <a href="#menu">Menu</a>
         </li>
-        <li className="p__opensans">
+        {/* <li className="p__opensans">
           <a href="#awards">Awards</a>
-        </li>
+        </li> */}
         <li className="p__opensans">
           <a href="#contact">Contact</a>
         </li>
       </ul>
 
       <div className="app__navbar-login">
-        <a href="#login" className="p__opensans">
+        {/* <a href="#login" className="p__opensans">
           Sign In / Sign Up
         </a>
-        <div />
-        <a href="/" className="p__opensans">
+        <div /> */}
+        <a href="#newsletter" className="p__opensans">
           Book Table
         </a>
       </div>
@@ -67,9 +66,9 @@ const Navbar = () => {
               <li className="p__opensans">
                 <a href="#menu">Menu</a>
               </li>
-              <li className="p__opensans">
+              {/* <li className="p__opensans">
                 <a href="#awards">Awards</a>
-              </li>
+              </li> */}
               <li className="p__opensans">
                 <a href="#contact">Contact</a>
               </li>

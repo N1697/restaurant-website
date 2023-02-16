@@ -65,6 +65,7 @@
   opacity: 0.5;
   cursor: pointer;
   transition: 0.5s ease;
+  z-index: 2;
 }
 .app__gallery-images_card:hover .gallery__image-icon {
   opacity: 1;
@@ -82,7 +83,7 @@
 }
 
 .gallery__arrow-icon {
-  color: var(--color-golden);
+  color: var(--color-skyblue);
   font-size: 2rem;
   cursor: pointer;
   background: var(--color-black);

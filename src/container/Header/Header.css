@@ -3,7 +3,7 @@
 }
 
 .app__header-h1 {
-  color: var(--color-golden);
+  color: var(--color-skyblue);
   font-family: var(--font-base);
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -12,4 +12,10 @@
 }
 .app__header-img img {
   width: 80%;
+}
+
+@media screen and (max-width: 650px) {
+  .app__header-h1 {
+    font-size: 80px;
+  }
 }

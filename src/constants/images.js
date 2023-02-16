@@ -21,6 +21,20 @@ import sign from "../assets/sign.png";
 import quote from "../assets/quote.png";
 import gericht from "../assets/gericht.png";
 
+import biennho from "../assets/bien-nho-seafood.png";
+import seafood1 from "../assets/seafood1.png";
+import introBiennho2 from "../assets/intro-biennho2.mp4";
+import gallerySeafood01 from "../assets/gallery-seafood01.png";
+import gallerySeafood02 from "../assets/gallery-seafood02.png";
+import gallerySeafood03 from "../assets/gallery-seafood03.png";
+import gallerySeafood04 from "../assets/gallery-seafood04.png";
+import gallerySeafood05 from "../assets/gallery-seafood05.png";
+import gallerySeafood06 from "../assets/gallery-seafood06.png";
+import gallerySeafood07 from "../assets/gallery-seafood07.png";
+import gallerySeafood08 from "../assets/gallery-seafood08.png";
+import gallerySeafood09 from "../assets/gallery-seafood09.png";
+import gallerySeafood10 from "../assets/gallery-seafood10.png";
+
 export default {
   bg,
   chef,
@@ -44,4 +58,18 @@ export default {
   sign,
   quote,
   gericht,
+
+  biennho,
+  seafood1,
+  introBiennho2,
+  gallerySeafood01,
+  gallerySeafood02,
+  gallerySeafood03,
+  gallerySeafood04,
+  gallerySeafood05,
+  gallerySeafood06,
+  gallerySeafood07,
+  gallerySeafood08,
+  gallerySeafood09,
+  gallerySeafood10,
 };

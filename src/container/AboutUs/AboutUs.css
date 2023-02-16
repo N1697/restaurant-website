@@ -35,17 +35,18 @@
   height: 910px;
 }
 
-.app__aboutus-content_history {
+.app__aboutus-content_services {
   flex: 1;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   text-align: left;
+  margin-top: auto;
 }
 
 .app__aboutus-content_about p,
-.app__aboutus-content_history p {
+.app__aboutus-content_services p {
   margin: 2rem 0;
   color: var(--color-grey);
 }
